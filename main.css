@@ -1,0 +1,286 @@
+:root{
+    --maincolor:#0cc3ce;
+}
+/* start header*/
+/*start sidebar*/
+.sidebar{
+    top:0;
+    position: fixed;
+    z-index: 99999;
+     width:40%;
+     height: 100vh; 
+     
+    right: -40%; 
+     transition: 1s ease; 
+}
+.show-sideBar{
+    right: 0; 
+}
+.padding{
+    padding-right: 40%;
+    transition: 1s ease ;
+}
+.bars_navbar_img img{
+    width: 30%;
+}
+.Latest_News a{
+text-decoration: none;
+color:darkgray;
+transition: all 0.3s;
+cursor: pointer;
+}
+.Latest_News a:hover{
+    background-color: var(--maincolor);
+}
+.New_In_Store a{
+    text-decoration: underline;
+    color: var(--maincolor);
+    
+}
+/*end sidebar*/
+
+/*start Carousel*/
+.carousel{
+    z-index: 999;
+    
+}
+
+.carousel-item{
+background-size:cover;
+background-position: top center;
+background-repeat: no-repeat;
+background-attachment:scroll!important;
+margin-top:70px;
+}
+.carousel-caption h1{
+font-size: 55px;
+}
+
+/* end Carousel */
+/*start navbar*/
+
+.navbar_upper{
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: small;
+    color:gray;
+    z-index: 9999;
+   
+}
+.navbar_upper .container{
+    padding: 20px;
+}
+.darkmode , .lightmode{
+    cursor: pointer;
+}
+
+.navbar_upper a{
+    color: white;
+    text-decoration: none;
+}
+.navbar_upper a:hover{
+color: white;
+}
+.end_navbar_upper_icoon i:hover{
+    color: var(--maincolor);
+    }
+.nav-one{
+    font-size: small;
+
+}
+
+.navbar{
+    position: fixed;
+    top:50px;
+    width: 100%;
+    z-index: 99999;
+  
+}
+
+.navbar .navbar-brand img{
+    width:50%;
+    display: flex;
+}
+.bag-shopping{
+    width:20px;
+    height:20px;
+}
+.navbar .nav-item  a{
+    position: relative;
+    padding: 30px;
+    transition: all .3s;
+
+   
+
+    
+}
+.navbar .nav-item  a:hover{
+    color:var(--maincolor);
+
+}
+.navbar .nav-item  .nav-home:hover:after{
+content: '';
+background-color:var(--maincolor);
+height: 5px;
+width:70px;
+bottom:1px;
+right: -4px;
+position: absolute;
+
+}
+.navbar .nav-item  .nav-pages:hover:after{
+    content: '';
+    background-color:var(--maincolor);
+    height: 5px;
+    width:70px;
+    bottom:1px;
+    right: -4px;
+    position: absolute;
+    
+    }
+    .navbar .nav-item  .nav-portfolio:hover:after{
+        content: '';
+        background-color:var(--maincolor);
+        height: 5px;
+        width:70px;
+        bottom:1px;
+        right: 3px;
+        position: absolute;
+        
+        }
+        .navbar .nav-item  .nav-shop:hover:after{
+            content: '';
+    background-color:var(--maincolor);
+            height: 5px;
+            width:70px;
+            bottom:1px;
+            right: -10px;
+            position: absolute;
+            
+            }
+            .navbar .nav-item  .nav-Elements:hover:after{
+                content: '';
+    background-color:var(--maincolor);
+                height: 5px;
+                width:70px;
+                bottom:1px;
+                right: 3px;
+                position: absolute;
+                
+                }
+                .navbar .nav-item  .nav-login:hover:after{
+                    content: '';
+                    background-color:var(--maincolor);
+                    height: 5px;
+                    width:70px;
+                    bottom:1px;
+                    right: -10px;
+                    position: absolute;
+                    
+                    }
+                    .nav_icon i:hover{
+                        color:var(--maincolor);
+                        transition: all 0.3s;
+                    }
+                    @media (max-width:1014px){
+                        .navbar_upper .container{
+                            padding: 40px;
+                            align-items: start !important;
+                        }
+                        .navbar{
+                            margin-top: 85px !important;
+                        }
+                       
+                   
+                    }
+                    @media(min-width:1270px) and (max-width:1400px){
+                        .carousel-item{
+                            
+                            background-position:  right center ;
+                            background-repeat: no-repeat;
+                            background-attachment:fixed;
+                            margin-top:70px;
+                            }
+                    }
+                    @media(max-width:1270px){
+                        .carousel-item{
+                            background-size:cover;
+                            background-position:  right center ;
+                            background-repeat: no-repeat;
+                            background-attachment:scroll;
+                            
+                            }
+                         
+                    }
+           
+                         
+                    
+               
+/* end navbar*/
+/* end header*/
+/* start main*/
+/*start Clothing items*/
+.Clothing_items a{
+    cursor: pointer;
+}
+.Clothing_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Clothing_item h2{
+    position: absolute;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+    
+
+}
+.Clothing_item h2:hover{
+    opacity: 1;
+}
+/*end Clothing items*/
+/*start portfolio*/
+.portfolio img{
+cursor: pointer;
+}
+.portfolio_content{
+    background-color: #ff8181;
+}
+.menswear1_beige , .jeans_beige , .jeans1_beige{
+    background-color: #e4e4a1;
+}
+.menswear1_Pistachio {
+    background-color: #e3f5b8;
+}
+/*end portfolio*/
+/*start owl-carousel*/
+.owl-next span , .owl-prev span {
+    padding: 14px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+/*end owl-carousel*/
+
+/*start footer*/
+.footer_end input{
+height:40px;
+width:100px;
+}
+.footer_end button{
+    height:40px;
+width:20px;
+}
+/*end footer*/
+/*end main*/

@@ -1,0 +1,47 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.up_btn{
+    position: fixed;
+    top: 85%;
+    right: -80px;
+    z-index: 999;
+    width:50px;
+    height: 50px;
+
+    
+}
+.show_btn{
+right:10px;
+transition: all 0.2s;
+}
+.up_btn:hover{
+    background-color: #2f343c;
+    color: #fff !important;
+}
+i{
+    cursor: pointer;
+}
+.d_none {
+    display: none !important; 
+    transition: all 0.5s;
+    
+}
+.leftfloat{
+transform: translate(-40%,0);
+transition: all 0.5s;
+}
+ .dark-mode {
+    background-color: #333  !important;
+    color: #fff  !important;
+    cursor: pointer;
+}
+.scrollnav{
+background-color: #ff8181  !important;
+
+}
+.navbar-nav .nav-link.active{
+    color:inherit;
+}
