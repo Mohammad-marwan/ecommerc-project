@@ -31,10 +31,12 @@ icon_close.addEventListener("click", () =>{
 })
 const lightmode = document.querySelector(".lightmode");
 const darkmode = document.querySelector(".darkmode");
+
 lightmode.addEventListener("click",()=>{
     try{
     lightmode.classList.add("d_none");
     darkmode.classList.remove("d_none");
+    sidebar.classList.add("dark-mode");
     document.body.classList.add("dark-mode");
     navbar.classList.add("dark-mode");
     const logo_dark= document.querySelector(".logo_dark");
@@ -55,6 +57,7 @@ darkmode.addEventListener("click",()=>{
     lightmode.classList.remove("d_none");
     darkmode.classList.add("d_none");
     document.body.classList.remove("dark-mode");
+    sidebar.classList.remove("dark-mode");
    navbar.classList.remove("dark-mode");
     const logo_dark= document.querySelector(".logo_dark");
     logo_dark.setAttribute("src","./images/logo_images/logo-dark.png");

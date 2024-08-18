@@ -213,7 +213,30 @@ position: absolute;
                             }
                          
                     }
+                    @media(max-width:635px){
+                        .gap-5  {
+                           gap: 1rem !important;;
+                            }
+                            .lightmode , .darkmode{
+                                height: 18px !important;
+                                width: 18px !important;
+                            }
+                            .carousel-item {
+                                background-size: 769px;
+                               
+                            }
+                            .Clothing_item img{
+                                margin-bottom: 10px;
+                            }
+                            .icon_footer{
+                                display: flex;
+                            }
+                        }
+                         
+                    
            
+                         
+                    
                          
                     
                
