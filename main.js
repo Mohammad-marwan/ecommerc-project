@@ -14,7 +14,7 @@ bars_navbar.addEventListener("click",() => {
      document.body.classList.add("padding")
    
 }catch{
-    alert("error");
+    alert("error sidebar");
 }
 
 });
@@ -49,7 +49,7 @@ lightmode.addEventListener("click",()=>{
     
 }
     catch{
-        alert("error");
+        alert("error dark mode");
     }
 })
 darkmode.addEventListener("click",()=>{
